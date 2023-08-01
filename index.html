@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation Page</title>
+  </head>
+  <body>
+    <div id="cen">
+
+    <nav id="navbar">
+      
+      <header id="nh">C Documentation</header>
+  <div id="link">
+
+      <a class="nav-link" href="#Introduction" id="left">Introduction</a>
+      <a class="nav-link" href="#Basic_Boilerplate" >Basic Boilerplate</a>
+      <a class="nav-link"  href="#Datatypes">Datatypes</a>
+      <a class="nav-link" href="#String">String</a>
+      <a class="nav-link"  href="#Structure">Structure</a>
+      <a class="nav-link"  href="#UDF">UDF</a>
+  </div>
+    </nav>
+    </div>
+    <main id="main-doc">
+    <div class="container">
+      
+
+      <section class="main-section" id="Introduction">
+      <header id="h1">Introduction</header>
+      <p id="p11">The programming language C was developed by Dennis Ritchie between 1972 and 1973. It was inspired by the language B. The place where the language was built is known as Bell Laboratories. It is a language used to build system software, application software and embedded systems.
+        <p id="p12"> C has inspired many languages, for example look at C++. It is a language which is based on C and adds features such as OOP(Object Oriented Programming). Furthermore you can find similarity in Java,C# etc.</p></p>
+      <p id="p13">
+        C is a middle level language. It does not support garbage collector. In the modern era C is not used extensively but is still effective.
+      </p>
+      </section>
+    </div>
+    <div class="container" id="Basic_Boilerplate">
+
+
+<section class="main-section" id="Basic_Boilerplate">
+      <header id="h2">Basic Boilerplate</header>
+      <p id="p21">The basic boiler plate code for the C language is </p>
+      <code id="c1">#include stdio.h<br id="b1">
+      <br id="b2">
+            int main()<br id="b3">
+            {<br id="b4">
+              printf("Hello world!");<br id="b5">
+              return 0;<br id="b6">
+            }
+      </code>
+      <p id="p22">
+        In the above code you can see the include keyword which is used to include library files in C. In this case we have included stdio.h which stands for 'standart input/output'. It supports basic functionalities like printf(),scanf().
+      </p>
+<p id="p23">scanf example:</p>
+<code>scanf("%d",&a);</code>
+
+</section>
+    </div>
+    <div class="container">
+
+
+<section class="main-section" id="Datatypes">
+      <header id="h3">Datatypes</header>
+      <p id="p31">The datatypes in C language are divided in 3 categories:</p>
+      <ul id="u1">
+<li id="l1">Primitive data types</li>
+<p id="p32">The primitive data type or built in data type has 4 components:</p>
+ <ol id="o1">
+<li id="l2">int </li>
+<li id="l3">float </li>
+<li id="l4">char </li>
+   <li id="l5">boolean</li>
+ </ol>
+<li id="l6">Derived data types</li>
+<p id="p33">The derived data types are data types which are the outcome of the process done on the primitive data types.</p>
+<p id="p34">
+  Example of such data types include:
+</p>
+<ol id="o2">
+<li id="l7">Stack</li>
+<li id="l8">Queue</li>
+<li id="l9">Linked list</li>
+  <li id="l10">Tree</li>
+</ol>
+        <li id="l11">User defined data types</li>
+        <p id="p35">These kind of data types are made by the user and for the user.</p>
+</section>
+        <p id="p36">Some common examples include:</p>
+        <ul id="u2" type="square">
+<li id="l12">Enum</li>
+          <li id="l13">Typedef</li>
+        </ul>
+      </ul>
+    </div>
+    <div class="container">
+
+
+<section class="main-section" id="String">
+      <header id="h4">String</header>
+      <p id="p41">String in the c language is also known as char array. C language does not provide the String as an datatype, rather you will have to use a code like this to declare a string:</p>
+      <code id="c2">
+        char name[20];
+      </code>
+      <p id="p42">The above code defines a variable name of 20 characters as a string in the c language</p>
+      <p id="p43">
+        To declare an array of string, you can refer the below example:
+      </p>
+      <code id="c3">char name[5][20];</code>
+</section>
+      <p id="p44">The above will declare 5 strings of 20 characters. </p>
+
+
+    </div>
+
+    <div class="container">
+
+
+<section class="main-section" id="Structure">
+      <header id="h5">Structure</header>
+      <p id="p51">Structures in C provide you with the feature of using multiple datatypes with the use of only one variable.</p>
+      <p id="p52">The typical Syntax of structure looks like:</p>
+      <code id="c4">
+        struct student<br id="b7">
+        {<br id="b8">
+           int rollno;<br id="b9">
+           char name[20];<br id="b10">
+        }
+      </code>
+</section>
+      <p id="p53">Explanation of the above code tokens:</p>
+       <ul id="u3">
+         <li id="l14">The struct keyword is used to declare structure</li>
+         <li id="l15">student is the name of the structure</li>
+         <li id="l16">the code block starts with curly braces and end with curly braces</li>
+         <li id="l17">The variables declared in the braces are called structure members.</li>
+       </ul>
+
+
+    </div>
+    <div class="container">
+
+
+    <section class="main-section" id="UDF">
+      <header id="h6">UDF</header>
+    </section>
+      <p id="p61">The term UDF stands for 'User Defined Function'. This help us in making utility functions for our main function to use.</p>
+      <p id="p62">There are four types of UDF:</p>
+      <ul id="u4" type="circle">
+<li id="l18">
+Function with no arguments and no return value.
+</li>
+<li id="l19">
+Function with no arguments and a return value.
+</li>
+<li id="l20">
+Function with arguments and no return value.
+</li>
+        <li id="l21">
+Function with arguments and with return value.
+        </li>
+      </ul>
+
+
+    </div>
+    </main>
+  </body>
+</html>
+
